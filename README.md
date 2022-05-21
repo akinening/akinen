@@ -1,132 +1,68 @@
-# Create Nuxt App
+# akinen
 
-[![NPM version](https://img.shields.io/npm/v/create-nuxt-app.svg?style=flat)](https://npmjs.com/package/create-nuxt-app)
-[![NPM downloads](https://img.shields.io/npm/dm/create-nuxt-app.svg?style=flat)](https://npmjs.com/package/create-nuxt-app)
-[![GitHub Action](https://github.com/nuxt/create-nuxt-app/workflows/ci/badge.svg?branch=master)](https://github.com/nuxt/create-nuxt-app/actions?query=branch%3Amaster++)
-
-> Create a [Nuxt.js](https://nuxtjs.org) project in seconds
-
-## Usage
-
-Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is shipped by default since [npm](https://www.npmjs.com/get-npm) `5.2.0`)
+## Build Setup
 
 ```bash
-npx create-nuxt-app <my-project>
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
 ```
 
-Or starting with npm v6.1 you can do:
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-```bash
-npm init nuxt-app@latest <my-project>
-```
+## Special Directories
 
-Or with [yarn](https://yarnpkg.com/en/):
+You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
-```bash
-yarn create nuxt-app <my-project>
-```
+### `assets`
 
-## Features :tada:
+The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
 
-1. Package manager
-    - Yarn
-    - Npm
-1. Programming language
-    - JavaScript
-    - TypeScript
-1. UI framework:
-    - None (feel free to add one later)
-    - [Ant Design Vue](https://github.com/vueComponent/ant-design-vue)
-    - [BalmUI](https://material.balmjs.com/)
-    - [Bootstrap](https://github.com/bootstrap-vue/bootstrap-vue)
-    - [Buefy](https://buefy.org)
-    - [Chakra UI](https://github.com/chakra-ui/chakra-ui-vue)
-    - [Element](https://github.com/ElemeFE/element)
-    - [Oruga](https://oruga.io/)
-    - [Primevue/](https://www.primefaces.org/primevue/)
-    - [Tachyons](https://github.com/tachyons-css/tachyons)
-    - [Tailwind CSS](https://github.com/tailwindcss/tailwindcss)
-    - [Windi CSS](https://github.com/windicss/windicss)
-    - [Vant](https://github.com/youzan/vant)
-    - [View UI](https://www.iviewui.com/)
-    - [Vuetify](https://github.com/vuetifyjs/vuetify)
-1. Nuxt.js modules:
-    - [Axios - Promise based HTTP client](https://github.com/nuxt-community/axios-module)
-    - [Progressive Web App (PWA)](https://github.com/nuxt-community/pwa-module)
-    - [Content - Git-based headless CMS](https://github.com/nuxt/content)
-1. Linting tools:
-    - [ESLint](https://github.com/nuxt/eslint-config)
-    - [Prettier](https://github.com/prettier/prettier)
-    - [Lint staged files](https://github.com/okonet/lint-staged)
-    - [StyleLint](https://github.com/stylelint/stylelint)
-    - [Commitlint](https://github.com/conventional-changelog/commitlint)
-1. Testing framework:
-    - None
-    - [Jest](https://github.com/facebook/jest)
-    - [AVA](https://github.com/avajs/ava)
-    - [WebdriverIO](https://webdriver.io)
-    - [Nightwatch](https://nightwatchjs.org)
-1. Rendering mode
-    - [Universal (SSR / Static)](https://nuxtjs.org/docs/features/rendering-modes#server-side-rendered-sites-and-static-sites)
-    - [SPA](https://nuxtjs.org/docs/features/rendering-modes#client-side-rendering-only)
-1. Deployment target
-    - [Server (Node.js hosting)](https://nuxtjs.org/docs/configuration-glossary/configuration-target)
-    - [Static (Static/JAMStack hosting)](https://nuxtjs.org/docs/configuration-glossary/configuration-target)
-1. Development tools
-    - [jsconfig.json](https://code.visualstudio.com/docs/languages/jsconfig)
-    - [Semantic PR](https://probot.github.io/apps/semantic-pull-requests/)
-    - [Dependabot (for GitHub only)](https://dependabot.com/)
-1. Continuous Integration
-    - [GitHub Actions](https://github.com/features/actions)
-    - [Travis CI](https://travis-ci.com)
-    - [CircleCI](https://circleci.com)
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
 
-## CLI Options
+### `components`
 
-### `--edge`
+The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
 
-Alias: `-e`.
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
 
-To install [nuxt-edge](https://www.npmjs.com/package/nuxt-edge) instead of [nuxt](https://www.npmjs.com/package/nuxt), add the command line option `--edge`:
+### `layouts`
 
-```bash
-npx create-nuxt-app <my-project> --edge
-```
+Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
 
-Or
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
 
-```bash
-npm init nuxt-app <my-project> --edge
-```
+### `pages`
 
-Or
+This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
 
-```bash
-yarn create nuxt-app <my-project> --edge
-```
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
 
-### `--info`
+### `plugins`
 
-Alias: `-i`. Print out debugging information relating to the local environment and exit.
+The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
 
-### `--help`
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
 
-Alias: `-h`. Show the help information and exit, include: usage, command and all cli options.
+### `static`
 
-### `--verbose`
+This directory contains your static files. Each file inside this directory is mapped to `/`.
 
-Show debug logs
+Example: `/static/robots.txt` is mapped as `/robots.txt`.
 
-### `--version`
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
 
-Alias: `-v`. Show version number and exit.
+### `store`
 
-### `--overwrite-dir`
+This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
-Overwrite the target directory.
-
-## Credits
-
-- [egoist](https://github.com/egoist)
-- [clarko](https://github.com/clarkdo)
-- All our contributors ([list](https://github.com/nuxt/create-nuxt-app/contributors)).
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
