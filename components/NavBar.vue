@@ -1,6 +1,8 @@
 <template>
   <section class="nav">
-    <a class="logo" href="/">#times</a>
+    <a href="/">
+      <img class="logo" src="/times-icon.svg" alt="">
+    </a>
     <div class="menu">
       <a class="menu__link" href="/">TOP</a>
       <a class="menu__link" href="">このサイトについて</a>
@@ -26,8 +28,6 @@
 </template>
 
 <style lang="stylus">
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,500;0,600;1,600&display=swap')
-
 .nav
   height 100%
   margin-right 40px
@@ -38,15 +38,11 @@
     margin 0
 
 .logo
-  display block
-  font-family 'Zilla Slab'
-  font-weight bold
-  font-style italic
-  font-size 48px
-  margin-bottom 24px
+  height 40px
+  margin 24px 0
 
   @media (max-width: 768px)
-    margin 0
+    margin 24px 0 0 20px
 
 .menu
   color #666
