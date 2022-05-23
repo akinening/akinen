@@ -1,6 +1,6 @@
 ---
 title: Vue.jsでChrome拡張機能をつくった話
-created_at: 1900-01-01
+created_at: 2022-05-22
 tags: その他
 top_image: /design/slide-2/1.png
 icon: /favicon.ico
