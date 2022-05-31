@@ -36,6 +36,9 @@ export default Vue.extend({
 </script>
 
 <style lang="stylus">
+.body-class
+  margin 0
+
 a, a:visited
   color #333
   text-decoration none
@@ -71,7 +74,7 @@ a, a:visited
   margin 16px
 
   @media (max-width: 768px)
-    width 100%
+    width fit-content
 
   &__img
     width 100%

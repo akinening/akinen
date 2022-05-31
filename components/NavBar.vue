@@ -24,13 +24,16 @@
       <a class="menu__link" href="">⛰️️  Nuxt.js</a>
       <a class="menu__link" href="">🍥  その他</a>
     </div>
+
+    <img class="hamburger" src="/menu.svg">
   </section>
 </template>
 
 <style lang="stylus">
 .nav
+  position relative
   height 100%
-  margin-right 40px
+  margin 0 20px 0 20px
 
   @media (max-width: 768px)
     width auto
@@ -58,4 +61,13 @@
   &__title
     font-size 20px
     margin 20px 0 8px
+
+.hamburger
+  display none
+
+  @media (max-width: 768px)
+    position absolute
+    display block
+    top 32px
+    right 24px
 </style>
