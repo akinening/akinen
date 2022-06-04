@@ -11,10 +11,19 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description',
-        name: 'description',
-        content: '#timesは、デザイン, PM, エンジニアリングのTipsを集めたサイトです。'
-      },
+
+      // Open Graph
+      { hid: 'og:title', property: 'og:title', content: '#times' },
+      { hid: 'og:description', property: 'og:description', content: '#timesは、デザイン, PM, エンジニアリングのTipsを集めたサイトです。' },
+      { hid: 'og:image', property: 'og:image', content: 'https://times.akinen.com/ogp.png' },
+      // Twitter Card
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@_akinen' },
+      { hid: 'twitter:title', name: 'twitter:title', content: '#times' },
+      { hid: 'twitter:description', name: 'twitter:description', content: '#timesは、デザイン, PM, エンジニアリングのTipsを集めたサイトです。' },
+      // サムネイル指定
+      { name: 'thumbnail', content: 'https://times.akinen.com/ogp.png' },
+
       { name: 'format-detection', content: 'telephone=no' },
     ],
     bodyAttrs: {
@@ -44,6 +53,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://sitemap.nuxtjs.org/
+    '@nuxtjs/sitemap'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -54,6 +65,10 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  sitemap: {
+    hostname: 'https://times.akinen.com'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

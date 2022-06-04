@@ -6,7 +6,7 @@
     <div class="menu">
       <a class="menu__link" href="/">TOP</a>
       <a class="menu__link" href="">このサイトについて</a>
-      <a class="menu__link" href="">外部リンク</a>
+      <a class="menu__link" href="https://akinen.com">Akinen.com</a>
 
       <h2 class="menu__title">デザイン</h2>
       <a class="menu__link" href="">📱  UIデザイン</a>
@@ -20,9 +20,7 @@
       <a class="menu__link" href="">🍥  その他</a>
 
       <h2 class="menu__title">技術</h2>
-      <a class="menu__link" href="">💻  Vue.js</a>
-      <a class="menu__link" href="">⛰️️  Nuxt.js</a>
-      <a class="menu__link" href="">🍥  その他</a>
+      <a class="menu__link" href="https://zenn.dev/012">🧘  Zenn（外部リンク）</a>
     </div>
 
     <img class="hamburger" src="/menu.svg">

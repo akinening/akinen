@@ -26,6 +26,24 @@ export default Vue.extend({
       post: await $content('posts/' + slug).fetch()
     }
   },
+    head() {
+      return {
+        title: this.post.title,
+        meta: [
+          // Open Graph
+          { hid: 'og:title', property: 'og:title', content: this.post.title },
+          { hid: 'og:description', property: 'og:description', content: '#timesは、デザイン, PM, エンジニアリングのTipsを集めたサイトです。' },
+          { hid: 'og:image', property: 'og:image', content: 'https://times.akinen.com' + this.post.top_image },
+          // Twitter Card
+          { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+          { hid: 'twitter:site', name: 'twitter:site', content: '@_akinen' },
+          { hid: 'twitter:title', name: 'twitter:title', content: this.post.title },
+          { hid: 'twitter:description', name: 'twitter:description', content: '#timesは、デザイン, PM, エンジニアリングのTipsを集めたサイトです。' },
+          // サムネイル指定
+          { name: 'thumbnail', content: 'https://times.akinen.com' + this.post.top_image }
+        ]
+      }
+    }
 })
 </script>
 
