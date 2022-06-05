@@ -1,7 +1,8 @@
 ---
 title: ノンデザイナーが知っていると便利なFigmaの使い方
 created_at: 2022-05-23
-tags: その他
+tags:
+  - UI
 top_image: /design/figma/figma.webp
 icon: /favicon.ico
 ---

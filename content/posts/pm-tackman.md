@@ -1,7 +1,8 @@
 ---
 title: タックマンモデルと不確実性コーンの話
 created_at: 2022-05-30
-tags: その他
+tags:
+  - Management
 top_image: /PM/tackman.png
 icon: /favicon.ico
 ---

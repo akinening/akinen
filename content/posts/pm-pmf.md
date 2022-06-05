@@ -1,7 +1,8 @@
 ---
 title: PMFに漕ぎ着けるまで
 created_at: 2022-06-01
-tags: その他
+tags:
+  - Strategy
 top_image: /PM/PMF.png
 icon: /favicon.ico
 ---

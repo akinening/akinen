@@ -2,23 +2,8 @@
   <section class="section">
     <NavBar />
     <div class="content">
-      <img class="hero" src="/ogp.png" alt="hero image">
-      <ul class="category">
-        <li class="category__item">
-          <nuxt-link to="/UX">UXデザイン</nuxt-link>
-        </li>
-        <li class="category__item">
-          <nuxt-link to="/UI">UIデザイン</nuxt-link>
-        </li>
-        <li class="category__item">
-          <nuxt-link to="/Strategy">事業戦略</nuxt-link>
-        </li>
-        <li class="category__item">
-          <nuxt-link to="/Management">マネジメント</nuxt-link>
-        </li>
-      </ul>
       <ul class="cards">
-        <li class="card" v-for="item in data" :key="item.slug">
+        <li v-for="item in data" :key="item.slug" class="card">
           <a :href="item.path">
             <img class="card__img" :src="item.top_image" alt="">
             <div class="card__title">{{ item.title }}</div>
@@ -33,18 +18,19 @@
 import Vue from 'vue'
 import NavBar from '~/components/NavBar.vue'
 export default Vue.extend({
-    async asyncData({ $content }) {
+    components: { NavBar },
+    async asyncData({ $content, params }) {
       const query = $content({ deep: true }).sortBy("created_at");
       const list = await query.fetch();
-      const data = list.sort(function (a, b) {
+      const article = list.filter(post => post.tags[0] === params.slug)
+      const data = article.sort(function (a, b) {
         return new Date(b.date) - new Date(a.date);
       });
       data.reverse();
       return {
         data,
       };
-    },
-    components: { NavBar }
+    }
 })
 </script>
 
@@ -66,40 +52,6 @@ a, a:visited
 .content
   margin 0 auto
   max-width 960px
-
-.hero
-  width calc(100% - 32px)
-  margin 16px
-  border-radius 10px
-
-  @media (max-width: 768px)
-    width 100%
-    margin 16px 0 0 0
-    border-radius 0
-
-.category
-  display flex
-  flex-direction row
-  padding 0
-  margin 20px 0 40px
-
-  &__item
-    list-style none
-    width 100%
-
-    & > a
-      display block
-      text-align center
-      padding 20px
-      margin 0 16px
-      font-weight bold
-      color white !important
-      background-color #333
-      border-radius 5px
-      transition all 0.2s ease
-
-      &:hover
-        background-color #555
 
 .cards
   display flex

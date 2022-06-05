@@ -1,7 +1,8 @@
 ---
 title: UIデザインもできる◯◯になるには
 created_at: 2022-05-24
-tags: その他
+tags:
+  - UI
 top_image: /design/slide-3/1.png
 icon: /favicon.ico
 ---

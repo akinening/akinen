@@ -1,7 +1,8 @@
 ---
 title: リワード設計
 created_at: 2022-05-23
-tags: その他
+tags:
+  - UX
 top_image: /design/reward.webp
 icon: /favicon.ico
 ---

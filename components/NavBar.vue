@@ -4,14 +4,13 @@
       <img class="logo" src="/times-icon.svg" alt="">
     </a>
     <div class="menu">
-      <a class="menu__link" href="/">TOP</a>
-      <a class="menu__link" href="">このサイトについて</a>
+      <nuxt-link class="menu__link" to="/">TOP</nuxt-link>
       <a class="menu__link" href="https://akinen.com">Akinen.com</a>
 
       <h2 class="menu__title">デザイン</h2>
-      <a class="menu__link" href="">📱  UIデザイン</a>
-      <a class="menu__link" href="">👤  UXデザイン</a>
-      <a class="menu__link" href="">🍥  その他</a>
+      <nuxt-link class="menu__link" to="/UX">👤  UXデザイン</nuxt-link>
+      <nuxt-link class="menu__link" to="/UI">📱  UIデザイン</nuxt-link>
+      <nuxt-link class="menu__link" to="/その他">🍥  その他</nuxt-link>
 
       <h2 class="menu__title">PM</h2>
       <a class="menu__link" href="">💭  事業戦略</a>

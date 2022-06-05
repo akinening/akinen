@@ -57,13 +57,13 @@ export default {
     '@nuxtjs/sitemap'
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  // https://go.nuxtjs.dev/config-axios
   axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+    // https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
 
-  // Content module configuration: https://go.nuxtjs.dev/config-content
+  // https://go.nuxtjs.dev/config-content
   content: {},
 
   sitemap: {

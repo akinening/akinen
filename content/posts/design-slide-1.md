@@ -1,7 +1,8 @@
 ---
 title: Webデザインに対する3つの誤解
 created_at: 2022-05-21
-tags: その他
+tags:
+  - その他
 top_image: /design/slide-1/1.png
 icon: /favicon.ico
 ---

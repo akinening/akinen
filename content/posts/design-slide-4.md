@@ -1,7 +1,8 @@
 ---
 title: テレワークにはFigmaを活用しよう
 created_at: 2022-05-20
-tags: その他
+tags:
+  - UI
 top_image: /design/slide-4/1.png
 icon: /favicon.ico
 ---
