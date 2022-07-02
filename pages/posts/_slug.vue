@@ -2,11 +2,10 @@
   <section class="section">
     <NavBar />
     <article class="content">
-      <img class="top-img" :src="post.top_image">
+      <img class="top-img" :src="post.top_image" width="100%" height="auto">
       <h1>{{ post.title }}</h1>
-      <!-- <time v-html="post.updated_at.split('T')[0]"></time>
 
-      <div v-for="tag in post.tags.split(',')" :key="tag">
+      <!-- <div v-for="tag in post.tags.split(',')" :key="tag">
           <a :href="'/tags/' + tag" class="tag">{{ tag }}</a>
       </div> -->
 
@@ -48,9 +47,23 @@ export default Vue.extend({
 </script>
 
 <style lang="stylus">
+.body-class
+  margin 0
+  overscroll-behavior-y none
+
 a, a:visited
   color #333
   text-decoration none
+
+.nuxt-content-highlight
+  width auto
+  margin 0
+
+  @media (max-width: 768px)
+    width calc(100vw - 32px)
+    margin 0 auto
+
+// 共通ここまで
 
 .section
   display flex
@@ -63,12 +76,24 @@ a, a:visited
   margin 0 auto
   max-width 960px
 
+  @media (max-width: 768px)
+    margin 0 16px
+
 .top-img
   width 100%
+  margin-top 24px
+  border-radius 10px
+
+  @media (max-width: 768px)
+    border-radius 0
+    margin 0
 
 .article
   &__img
     width 100%
     margin 20px
     filter drop-shadow(0 0 4px rgba(0,0,0,0.16))
+
+    @media (max-width: 768px)
+      margin 20px 0
 </style>

@@ -3,7 +3,7 @@ title: ノンデザイナーが知っていると便利なFigmaの使い方
 created_at: 2022-05-23
 tags:
   - UI
-top_image: /design/figma/figma.webp
+top_image: /design/figma/figma.png
 icon: /favicon.ico
 ---
 
@@ -19,7 +19,7 @@ Figmaの基本操作は画面左上にまとまっており、UIを選択する�
 
 画面左にはレイヤー構造が表示されており、そちらをクリックしても同様に要素を選択できます。
 
-<img class="article__img" src="/design/figma/1.gif">
+<img class="article__img" src="/design/figma/1.gif" loading="lazy">
 
 (画質が劣化しましたが雰囲気だけ伝わればと)
 
@@ -29,7 +29,7 @@ Figmaの基本操作は画面左上にまとまっており、UIを選択する�
 
 レイヤーをダブルクリックし続ければ下層の要素まで選択できますが、<b>Commandキー</b>を押しながら当該箇所をクリックすると、一発で最下層の要素を選択できます👌
 
-<img class="article__img" src="/design/figma/2.gif">
+<img class="article__img" src="/design/figma/2.gif" loading="lazy">
 
 画面右側に、選択した要素のサイズや色が表示されます。
 
@@ -37,7 +37,7 @@ Figmaの基本操作は画面左上にまとまっており、UIを選択する�
 
 要素を選択した状態で<b>Optionキー</b>を押すと、他の要素との距離が赤線で表示されます。これで毎回「ここのmargin教えて下さい！」と確認する必要が減ります🙌
 
-<img class="article__img" src="/design/figma/3.gif">
+<img class="article__img" src="/design/figma/3.gif" loading="lazy">
 
 ## 3. SVGやPNGで画像を書き出す方法
 
@@ -45,7 +45,7 @@ Figmaの基本操作は画面左上にまとまっており、UIを選択する�
 
 任意の要素を選択して、右下の「Export」から好きな形式・解像度で書き出すことが可能です。
 
-<img class="article__img" src="/design/figma/4.gif">
+<img class="article__img" src="/design/figma/4.gif" loading="lazy">
 
 …ただ、画像素材は解像度などの問題もあるので、デザイナーがいるのであれば確認していただいたほうが安心かと思います。
 

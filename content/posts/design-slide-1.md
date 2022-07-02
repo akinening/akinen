@@ -17,22 +17,22 @@ icon: /favicon.ico
 ビジュアルは伝達方法であり、どうすれば相手に伝わるかを考えるのが仕事です。<br>
 勿論、見た目の美しさも伝達方法の１つであり、グラフィックデザイナーの力の見せ所です。
 
-<img class="article__img" src="/design/slide-1/2.png">
+<img class="article__img" src="/design/slide-1/2.png" loading="lazy">
 
 ## 2.デザインって、抽象的で何してるか謎。
 ### A. そうでもないです
 先人たちの言語化によって、お約束やフレームワークが生まれています。<br>
 
-<img class="article__img" src="/design/slide-1/3.png">
+<img class="article__img" src="/design/slide-1/3.png" loading="lazy">
 
-<img class="article__img" src="/design/slide-1/4.png">
+<img class="article__img" src="/design/slide-1/4.png" loading="lazy">
 
 ## 3.デザインには「終わり」がないのでしんどそう
 ### A. 終わりがないのは他と一緒
 どこまでやるかを決める。<br>
 タスクを細分化することで、工数の推定も可能。
 
-<img class="article__img" src="/design/slide-1/5.png">
+<img class="article__img" src="/design/slide-1/5.png" loading="lazy">
 
 ## まとめ
 ### デザインは、意外と地道なもの

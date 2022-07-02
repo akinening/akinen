@@ -19,7 +19,7 @@ icon: /favicon.ico
 
 アメリカの心理学者 Bruce Tuckmanが1965年に提唱し、1977年に改定された、組織の成長フェーズを表したモデルです。
 
-<img class="article__img" src="/PM/tackman_model.png">
+<img class="article__img" src="/PM/tackman_model.png" loading="lazy">
 
 ### 1. 成立期（Forming）
 

@@ -12,7 +12,7 @@ icon: /favicon.ico
 こんにちは、あきねんです。<br>
 今までデザインの便利サイトをブックマークしていたのですが、その数が大量になり、結局使わないという問題に直面しました。<br>
 そこで、Webアプリ化してホームに設定すれば、毎回開くので便利なのでは？と思い至り、Chrome拡張を作ることにしました。
-<img class="article__img" src="/design/slide-2/2.png">
+<img class="article__img" src="/design/slide-2/2.png" loading="lazy">
 今回は、Vue.jsで↑のようなChrome拡張機能をつくったプロセスをご紹介します。
 
 ## ① Figmaでデザイン
@@ -24,14 +24,14 @@ vue-routerでルーティングを制御し、SPA(Single Page Application)に。
 
 ## ③ Chrome拡張に対応させる
 
-<img class="article__img" src="/design/slide-2/8.png">
-<img class="article__img" src="/design/slide-2/9.png">
+<img class="article__img" src="/design/slide-2/8.png" loading="lazy">
+<img class="article__img" src="/design/slide-2/9.png" loading="lazy">
 
 ## ④ ストアに申請する
 
-<img class="article__img" src="/design/slide-2/10.png">
-<img class="article__img" src="/design/slide-2/11.png">
+<img class="article__img" src="/design/slide-2/10.png" loading="lazy">
+<img class="article__img" src="/design/slide-2/11.png" loading="lazy">
 
 ## まとめ
 
-<img class="article__img" src="/design/slide-2/12.png">
+<img class="article__img" src="/design/slide-2/12.png" loading="lazy">

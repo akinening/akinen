@@ -13,7 +13,7 @@ icon: /favicon.ico
 
 Web製品におけるUIデザインは決してデザイナーだけによるものではなく、エンジニアやPMなど、いろんな方の意見を交えながら作っていくものです。本記事では、他職種の方が「UIデザインができる」と言える状態になるための３つの方法についてご紹介します。
 
-<img class="article__img" src="/design/slide-3/4.png">
+<img class="article__img" src="/design/slide-3/4.png" loading="lazy">
 
 ### 「UIデザインが出来る」ようになるには？
 
@@ -25,19 +25,19 @@ A. 手を動かすこと、一択です。
 
 しかしそれだけでは納得いかないと思いますので、今回は主にノンデザイナーの方へ向けて、手を動かすといっても何をすればいいのか、ご紹介します。
 
-<img class="article__img" src="/design/slide-3/6.png">
-<img class="article__img" src="/design/slide-3/7.png">
-<img class="article__img" src="/design/slide-3/8.png">
-<img class="article__img" src="/design/slide-3/9.png">
-<img class="article__img" src="/design/slide-3/10.png">
-<img class="article__img" src="/design/slide-3/11.png">
+<img class="article__img" src="/design/slide-3/6.png" loading="lazy">
+<img class="article__img" src="/design/slide-3/7.png" loading="lazy">
+<img class="article__img" src="/design/slide-3/8.png" loading="lazy">
+<img class="article__img" src="/design/slide-3/9.png" loading="lazy">
+<img class="article__img" src="/design/slide-3/10.png" loading="lazy">
+<img class="article__img" src="/design/slide-3/11.png" loading="lazy">
 
 ## まとめ
 
-<img class="article__img" src="/design/slide-3/12.png">
+<img class="article__img" src="/design/slide-3/12.png" loading="lazy">
 
 ## おまけ： おすすめサイト
 
-<img class="article__img" src="/design/slide-3/14.png">
+<img class="article__img" src="/design/slide-3/14.png" loading="lazy">
 
 

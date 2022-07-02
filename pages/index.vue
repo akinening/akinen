@@ -1,26 +1,25 @@
 <template>
   <section class="section">
-    <NavBar />
     <div class="content">
-      <img class="hero" src="/ogp.png" alt="hero image">
+      <img class="hero" src="/ogp.png" alt="hero image" loading="lazy">
       <ul class="category">
         <li class="category__item">
-          <nuxt-link to="/UX">UXデザイン</nuxt-link>
+          <nuxt-link to="/UX">#UXデザイン</nuxt-link>
         </li>
         <li class="category__item">
-          <nuxt-link to="/UI">UIデザイン</nuxt-link>
+          <nuxt-link to="/UI">#UIデザイン</nuxt-link>
         </li>
         <li class="category__item">
-          <nuxt-link to="/Strategy">事業戦略</nuxt-link>
+          <nuxt-link to="/Strategy">#事業戦略</nuxt-link>
         </li>
         <li class="category__item">
-          <nuxt-link to="/Management">マネジメント</nuxt-link>
+          <nuxt-link to="/Management">#マネジメント</nuxt-link>
         </li>
       </ul>
       <ul class="cards">
-        <li class="card" v-for="item in data" :key="item.slug">
+        <li v-for="item in data" :key="item.slug" class="card">
           <a :href="item.path">
-            <img class="card__img" :src="item.top_image" alt="">
+            <img class="card__img" :src="item.top_image" alt="" loading="lazy">
             <div class="card__title">{{ item.title }}</div>
           </a>
         </li>
@@ -31,7 +30,6 @@
 
 <script>
 import Vue from 'vue'
-import NavBar from '~/components/NavBar.vue'
 export default Vue.extend({
     async asyncData({ $content }) {
       const query = $content({ deep: true }).sortBy("created_at");
@@ -43,38 +41,19 @@ export default Vue.extend({
       return {
         data,
       };
-    },
-    components: { NavBar }
+    }
 })
 </script>
 
 <style lang="stylus">
-.body-class
-  margin 0
-
-a, a:visited
-  color #333
-  text-decoration none
-
-.section
-  display flex
-  flex-direction row
-
-  @media (max-width: 768px)
-    flex-direction column
-
-.content
-  margin 0 auto
-  max-width 960px
-
 .hero
-  width calc(100% - 32px)
-  margin 16px
+  width calc(100% - 24px)
+  margin 24px 12px
   border-radius 10px
 
   @media (max-width: 768px)
     width 100%
-    margin 16px 0 0 0
+    margin 0
     border-radius 0
 
 .category
@@ -82,6 +61,9 @@ a, a:visited
   flex-direction row
   padding 0
   margin 20px 0 40px
+
+  @media (max-width: 768px)
+    flex-direction column
 
   &__item
     list-style none
@@ -91,42 +73,18 @@ a, a:visited
       display block
       text-align center
       padding 20px
-      margin 0 16px
+      margin 0 10px
       font-weight bold
-      color white !important
-      background-color #333
-      border-radius 5px
+      color #27273F
+      border-radius 10px
+      background-color #f2f2f7
       transition all 0.2s ease
 
       &:hover
-        background-color #555
+        color white !important
+        background-color #27273F
 
-.cards
-  display flex
-  flex-direction row
-  flex-wrap wrap
-  padding 0
-
-  @media (max-width: 768px)
-    flex-direction column
-
-.card
-  list-style none
-  width calc(50% - 32px)
-  background-color white
-  filter drop-shadow(0 0 4px rgba(0,0,0,0.16))
-  border-radius 10px
-  box-sizing border-box
-  overflow hidden
-  margin 16px
-
-  @media (max-width: 768px)
-    width fit-content
-
-  &__img
-    width 100%
-
-  &__title
-    margin 16px
-    font-weight bold
+      @media (max-width: 768px)
+        padding 12px
+        margin 4px 16px
 </style>

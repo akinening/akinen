@@ -1,11 +1,10 @@
 <template>
   <section class="section">
-    <NavBar />
     <div class="content">
       <ul class="cards">
         <li v-for="item in data" :key="item.slug" class="card">
           <a :href="item.path">
-            <img class="card__img" :src="item.top_image" alt="">
+            <img class="card__img" :src="item.top_image" alt="" width="100%" height="auto" loading="lazy">
             <div class="card__title">{{ item.title }}</div>
           </a>
         </li>
@@ -16,9 +15,7 @@
 
 <script>
 import Vue from 'vue'
-import NavBar from '~/components/NavBar.vue'
 export default Vue.extend({
-    components: { NavBar },
     async asyncData({ $content, params }) {
       const query = $content({ deep: true }).sortBy("created_at");
       const list = await query.fetch();
@@ -37,21 +34,24 @@ export default Vue.extend({
 <style lang="stylus">
 .body-class
   margin 0
+  overscroll-behavior-y none
 
 a, a:visited
   color #333
   text-decoration none
 
-.section
-  display flex
-  flex-direction row
+// 共通ここまで
 
-  @media (max-width: 768px)
-    flex-direction column
+// .section
 
 .content
-  margin 0 auto
+  margin-left 264px
+  margin-right 116px
   max-width 960px
+
+  @media (max-width: 768px)
+    margin 0
+    width 100%
 
 .cards
   display flex
@@ -64,16 +64,20 @@ a, a:visited
 
 .card
   list-style none
-  width calc(50% - 32px)
+  width calc(50% - 24px)
   background-color white
   filter drop-shadow(0 0 4px rgba(0,0,0,0.16))
   border-radius 10px
   box-sizing border-box
   overflow hidden
-  margin 16px
+  margin 12px
+  transition all 0.2s ease
 
   @media (max-width: 768px)
     width fit-content
+  
+  &:hover
+    filter drop-shadow(0 0 2px rgba(0,0,0,0.08))
 
   &__img
     width 100%

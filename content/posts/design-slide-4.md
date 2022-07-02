@@ -15,7 +15,7 @@ icon: /favicon.ico
 
 ## Figmaとは？
 
-<img class="article__img" src="/design/slide-4/4.png">
+<img class="article__img" src="/design/slide-4/4.png" loading="lazy">
 
 ### 簡単にいうと、パワポのすごい版。
 
